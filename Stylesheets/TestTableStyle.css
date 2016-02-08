@@ -1,0 +1,15 @@
+.succes {
+    background-color: green;
+}
+img {
+    display:block;
+}
+.failed {
+    background-color: red;
+}
+.progress {
+    background-color: yellow;
+}
+.untested {
+    background-color: gray;
+}
