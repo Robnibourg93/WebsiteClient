@@ -1,0 +1,118 @@
+/*
+*
+*
+*
+*
+*/
+
+@font-face {
+    font-family: Raleway;
+    src: url(../Resources/Fonts/Raleway-Light.ttf);
+}
+.header-container
+h1.header-title{
+	float: left;
+	display: inline;
+}
+h2{
+	margin-top: 0px;
+	background-color: #2c3e50;
+	color: #ecf0f1;
+	padding: 5px;
+}
+header{
+	clear: left;
+	display: block;
+	margin-left: 2.5%;
+	margin-right: 2.5%;
+}
+nav{
+	display: block-inline;
+	background-color: #2c3e50;
+}
+img.header-logo{
+	float: left;
+	display: block-inline;
+	width: 150px;
+	height: 150px;
+}
+
+body{
+	font-family: Raleway;
+	background-color: #ecf0f1;
+}
+main{
+	clear: left;
+}
+.left-column{
+	background-color: #FFFFFF;
+	float: left;
+	display: block-inline;
+	position: relative;
+	width: 30%;
+	margin-left: 2.5%;
+	margin-right: 2.5%;
+}
+.mid-column{
+	background-color: #FFFFFF;
+	float: left;
+	display: block-inline;
+	position: relative;
+	width: 30%;
+	margin-right: 2.5%;
+}
+
+.right-column{
+	background-color: #FFFFFF;
+	float: right;
+	display: block-inline;
+	position: relative;
+	width: 30%;
+	margin-right: 2.5%;
+}
+
+.news-icon:before{
+	content: "";
+	background: url("../Resources/Icons/news.png");
+	display: block;
+	width: 32px;
+    height: 32px;
+    float: left;
+    margin: 0 6px 0 0;
+	filter: invert(100%);
+}
+
+.recent-icon:before{
+	content: "";
+	background: url("../Resources/Icons/documents.png");
+	display: block;
+	width: 32px;
+    height: 32px;
+    float: left;
+    margin: 0 6px 0 0;
+	filter: invert(100%);
+}
+
+.review-icon:before{
+	content: "";
+	background: url("../Resources/Icons/chat.png");
+	display: block;
+	width: 32px;
+    height: 32px;
+    float: left;
+    margin: 0 6px 0 0;
+	filter: invert(100%);
+}
+
+ul.nav-menu{
+	list-style-type: none;
+	background-color: #2c3e50;
+}
+
+li.nav-item{
+	float: left;
+	color: #ecf0f1;
+	display: block-inline;
+	margin: 5px;
+}
+
