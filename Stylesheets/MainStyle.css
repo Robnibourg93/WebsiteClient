@@ -4,7 +4,6 @@
 *
 *
 */
-
 @font-face {
     font-family: Raleway;
     src: url(../Resources/Fonts/Raleway-Light.ttf);
@@ -176,7 +175,93 @@ a.nav-item-last {
 a.nav-item-last:hover {
     color:#2980b9;
 }
+@media only screen and (max-width: 1024px){
+	.left-column{
+		background-color: #ecf0f1;
+		float: left;
+		display: inline-block;
+		position: relative;
+		width: 32%;
+		margin-left: 1%;
+		margin-right: 1%;
+	}
+	.mid-column{
+		background-color: #ecf0f1;
+		float: left;
+		display: inline-block;
+		position: relative;
+		width: 32%;
+		margin-left: 0%;
+		margin-right: 1%;
+	}
 
+	.right-column{
+		background-color: #ecf0f1;
+		float: right;
+		display: inline-block;
+		position: relative;
+		width: 32%;
+		margin-left: 0%;
+		margin-right: 1%;
+	}
+	
+	a.nav-item{
+		-o-transition:.5s;
+		-moz-transition:.5s;
+		-webkit-transition:.5s;
+		transition:.5s;
+		color: #ecf0f1;
+		font-size: 14px;
+		display: inline-block;
+		margin-left: 5px;
+		padding-top: 3px;
+		padding-bottom: 3px;
+		text-decoration:none;
+	}
+}
+
+@media only screen and (max-width: 768px){
+	.left-column{
+		background-color: #ecf0f1;
+		display: block;
+		position: relative;
+		width: 98%;
+		margin-left: 1%;
+		margin-right: 1%;
+	}
+	.mid-column{
+		background-color: #ecf0f1;
+		display: block;
+		position: relative;
+		width: 98%;
+		margin-left: 1%;
+		margin-right: 1%;
+	}
+
+	.right-column{
+		background-color: #ecf0f1;
+		display: block;
+		position: relative;
+		width: 98%;
+		margin-left: 1%;
+		margin-right: 1%;
+	}
+	
+	a.nav-item{
+		-o-transition:.5s;
+		-moz-transition:.5s;
+		-webkit-transition:.5s;
+		transition:.5s;
+		color: #ecf0f1;
+		font-size: 14px;
+		display: inline-block;
+		margin-left: 5px;
+		padding-top: 3px;
+		padding-bottom: 3px;
+		text-decoration:none;
+	}	
+	
+}
 
 
 
