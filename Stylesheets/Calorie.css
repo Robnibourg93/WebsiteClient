@@ -1,0 +1,19 @@
+#playlist {
+  position: absolute;
+  left: 0;
+  min-width: 160px;
+  min-height:160px;
+  border: 1px solid black;
+  display: block;
+  float: right;
+}
+#playlist img {
+  display: inline-block;
+  clear: left;
+  margin: 5px;
+}
+img {
+  width: 150px;
+  height: 90px;
+  margin: 5px;
+}
