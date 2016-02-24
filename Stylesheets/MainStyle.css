@@ -162,6 +162,21 @@ a.nav-item:after {
     content: "|";
     color: #ecf0f1;
 }
+.assignment-link {
+    -o-transition:.5s;
+    -moz-transition:.5s;
+    -webkit-transition:.5s;
+    transition:.5s;
+    background-color: #3498db;
+    color: #ecf0f1;
+    padding: 7.5px;
+    margin: 10px;
+    width: 200px;
+    text-align: left;
+}
+    .assignment-link:hover {
+        color:#2980b9;
+    }
 
 a.nav-item-last {
     -o-transition:.5s;
