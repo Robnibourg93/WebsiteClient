@@ -67,6 +67,11 @@ body{
     line-height: 1.625;
 }
 main{
+    width: 100%;
+    position: absolute;
+    display: block;
+    height: 90%;
+
     margin-top: 15px;
 	clear: left;
 }

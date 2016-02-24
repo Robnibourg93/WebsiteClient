@@ -1,19 +1,58 @@
 #playlist {
-  position: absolute;
-  left: 0;
-  min-width: 160px;
-  min-height:160px;
-  border: 1px solid black;
-  display: block;
-  float: right;
+    position: absolute;
+    left: 0;
+    min-width: 160px;
+    min-height:160px;
+    border: 1px solid black;
+    display: block;
+    float: right;
 }
-#playlist img {
-  display: inline-block;
-  clear: left;
-  margin: 5px;
+#plate-container {
+    display: block;
+    position: relative;
+    width: 60%;
+    height: 40%;
+    margin: 2.5%;
+    float: right;
+    clear: right;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: right;
+    background-image: url(../Resources/Pictures/bord.png)
+}
+#plate {
+    position:relative;
+    float:right;
+    width: 30%;
+    height: 80%;
+    margin : 5%;
+}
+#info-container {
+    float: left;
+    display: inline;
+
+}
+
+#food-data {
+    list-style-type: none;
+}
+#plate img {
+    float: left;
+    max-width: 22.5%;
+    max-height: 22.5%;
+    margin: 1.25%;
 }
 img {
-  width: 150px;
-  height: 90px;
-  margin: 5px;
+    float: left;
+    position: relative;
+    max-width: 22.5%;
+    max-height: 22.5%;
+    margin: 1.25%;
+}
+.food-container {
+    width: 30%;
+    height: 100%;
+    float: left;
+    clear: left;
+    margin: 2.5%;
 }

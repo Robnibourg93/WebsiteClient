@@ -19,14 +19,38 @@
 			</nav>
 		</header>
 		<main>
-			<img id="1" src="../Resources/Food/broodjegezond.png" draggable="true" ondragstart="drag(event)" alt="Image 1"/>
-			<img id="2" src="../Resources/Food/heineken5l.png" draggable="true" ondragstart="drag(event)" alt="Image 2"/>
-			<img id="3" src="../Resources/Food/kapsalon.png" draggable="true" ondragstart="drag(event)" alt="Image 3"/>
-			<img id="4" src="../Resources/Food/pizza.png" draggable="true" ondragstart="drag(event)" alt="Image 4"/>
-			<img id="5" src="../Resources/Food/waterfiets.png" draggable="true" ondragstart="drag(event)" alt="Image 5"/>
+            <div class="food-container">
+			    <img id="1" sugar="30" fat="21" salt="5" protein="3" fibers="4" kc="150" src="../Resources/Food/broodjegezond.png" draggable="true" ondragstart="drag(event)" alt="broodje gezond"/>
+			    <img id="2" sugar="4" fat="0" salt="0" protein="0" fibers="5" kc="100" src="../Resources/Food/bier.png" draggable="true" ondragstart="drag(event)" alt="bier"/>
+			    <img id="3" sugar="50" fat="80" salt="20" protein="5" fibers="2" kc="1000" src="../Resources/Food/kapsalon.png" draggable="true" ondragstart="drag(event)" alt="kapsalon"/>
+			    <img id="4" sugar="5" fat="10" salt="1" protein="1" fibers="3" kc="1000" src="../Resources/Food/pizza.png" draggable="true" ondragstart="drag(event)" alt="pizza"/>
+			    <img id="5" sugar="5" fat="20" salt="1" protein="1" fibers="4" kc="200" src="../Resources/Food/patat.png" draggable="true" ondragstart="drag(event)" alt="patat"/>
+                <img id="6" sugar="3" fat="4" salt="5" protein="2" fibers="3" kc="100" src="../Resources/Food/tosti.png" draggable="true" ondragstart="drag(event)" alt="tosti" />
+                <img id="7" sugar="6" fat="10" salt="1" protein="4" fibers="4" kc="120" src="../Resources/Food/muesli.png" draggable="true" ondragstart="drag(event)" alt="muesli" />
+                <img id="8" sugar="8" fat="5" salt="6" protein="5" fibers="5" kc="250" src="../Resources/Food/hamburger.png" draggable="true" ondragstart="drag(event)" alt="hamburger" />
+                <img id="9" sugar="7" fat="6" salt="1" protein="3" fibers="5" kc="50" src="../Resources/Food/boterhamKaas.png" draggable="true" ondragstart="drag(event)" alt="boterham met kaas" />
+                <img id="10" sugar="6" fat="8" salt="7" protein="4" fibers="3" kc="300" src="../Resources/Food/sushi.png" draggable="true" ondragstart="drag(event)" alt="sushi" />
+                <img id="11" sugar="5" fat="20" salt="1" protein="8" fibers="1" kc="600" src="../Resources/Food/pasta.png" draggable="true" ondragstart="drag(event)" alt="pasta" />
+                <img id="12" sugar="4" fat="90" salt="5" protein="6" fibers="5" kc="900" src="../Resources/Food/sparerib.png" draggable="true" ondragstart="drag(event)" alt="spareribs" />
+                <img id="13" sugar="7" fat="10" salt="6" protein="3" fibers="4" kc="400" src="../Resources/Food/kipwrap.png" draggable="true" ondragstart="drag(event)" alt="kipwrap" />
+                <img id="14" sugar="5" fat="3" salt="5" protein="5" fibers="5" kc="200" src="../Resources/Food/salades.png" draggable="true" ondragstart="drag(event)" alt="salade" />
+                <img id="15" sugar="1" fat="4" salt="7" protein="4" fibers="3" kc="50" src="../Resources/Food/eieren.png" draggable="true" ondragstart="drag(event)" alt="eieren" />
+            </div>
+			<div id="plate-container">
+                <section id="info-container">
+                    <h3 id="kc">Calorieën:    ****kc</h3>
+                    <ul id="food-data">
+                        <li id="sugar">Suiker  **g   *%</li>
+                        <li id="salt">Zout  **g   *%</li>
+                        <li id="fat">Vet  **g   *%</li>
+                        <li id="protein">Eiwit  **g   *%</li>
+                        <li id="fibers">Vezels  **g   *%</li>
+                    </ul>
 
-			<div id="playlist" ondrop="drop(event)" ondragover="allowDrop(event)">
+                </section>
+                <div id="plate" ondrop="drop(event)" ondragover="allowDrop(event)">
 
+                </div>
 			</div>
 		</main>
 		<footer>
