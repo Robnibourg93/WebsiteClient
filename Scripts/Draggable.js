@@ -1,4 +1,5 @@
 var totalKc = 0,totalSugar = 0,totalFat = 0,totalProtein = 0,totalFibers = 0,totalSalt = 0;
+
 function allowDrop(ev) {
     ev.preventDefault();
 }
