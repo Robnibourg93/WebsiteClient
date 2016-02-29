@@ -10,14 +10,18 @@ function initialize() {
 $(document).ready(function(){
     $.ajax({
         type: "GET",
-        url: "../Resources/Data/t_oorlogsmonumenten_view.xml.xml",
+        url: "../Resources/Data/t_oorlogsmonumenten_view.xml",
         dataType: "xml",
         success: function(xml) {
-            $(xml).find('row').each(function(){
-                var id = $(this).attr('ID');
-                var title = $(this).find('title').text();
-                var url = $(this).find('url').text();
-                console.log("id = "+id+", title = "+title);
+            $(xml).find('row').each(function () {
+                $(this).find('field').each(function(){
+                console.log($(this).text());
+               // var id = ;
+                //var title = $(this).attr('title').text();
+                //var url = $(this).attr('url').text();
+                //console.log("id = "+id+", title = "+title);
+                });
+
                // $('').html(''+title+'').appendTo('#page-wrap');
             });
         }
