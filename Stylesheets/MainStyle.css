@@ -18,6 +18,12 @@ h1.header-title{
     font-weight: 100;
     text-align: center;
 }
+.column-bg-white {
+    background: white;
+    -webkit-box-shadow: 0px 0px 21px 1px rgba(127,140,141,1);
+    -moz-box-shadow: 0px 0px 21px 1px rgba(127,140,141,1);
+    box-shadow: 0px 0px 21px 1px rgba(127,140,141,1);
+}
 h2{
 	margin-top: 0px;
 	background-color: #3498db;
@@ -71,7 +77,6 @@ main{
     position: absolute;
     display: block;
     height: 90%;
-
     margin-top: 15px;
 	clear: left;
 }
@@ -122,6 +127,26 @@ main{
     height: 32px;
     float: left;
     margin: 0 6px 0 0;
+}
+.sml-blue-btn {
+    border-radius: 0px;
+    background-color: #3498db;
+    width: 75px;
+    padding: 5px;
+    margin: 3px;
+    border: 0px;
+    cursor: pointer;
+    color: #ecf0f1;
+}
+    .sml-blue-btn:active {
+    -webkit-box-shadow: inset 0px 0px 6px 1px rgba(0,0,0,0.75);
+    -moz-box-shadow: inset 0px 0px 6px 1px rgba(0,0,0,0.75);
+    box-shadow: inset 0px 0px 6px 1px rgba(0,0,0,0.75);
+    }
+
+.btn-align-right {
+    display: inline-block;
+    float: right;
 }
 
 .review-icon:before{
@@ -282,6 +307,3 @@ a.nav-item-last:hover {
 	}	
 	
 }
-
-
-
