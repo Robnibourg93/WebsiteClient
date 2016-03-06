@@ -39,7 +39,8 @@
             <div id="plate" ondrop="drop(event)" ondragover="allowDrop(event)">
             </div>
             <section id="info-container">
-                <h3 id="kc">Calorieën:    ****kc</h3>
+                <h3 id="kc">Calorieën:    ****kc *%</h3>
+                <p>De percentages geven de Dagelijks aanbevolen hoeveelheid aan.</p>
                 <ul id="food-data">
                     <li class="food-data-item" id="sugar">Suiker  **g   *%</li>
                     <li class="food-data-item" id="salt">Zout  **g   *%</li>
@@ -48,11 +49,13 @@
                     <li class="food-data-item" id="fibers">Vezels  **g   *%</li>
                 </ul>
                 <button class="sml-blue-btn btn-align-right" onclick="reset()">reset!</button>
+                <button class="sml-blue-btn btn-align-right" id="manOrWomen" sex="women">Vrouwen klik hier!</button>
             </section>
 
 		</main>
 		<footer>
-		</footer>	
+		</footer>
+        <script src="../Scripts/jquery-1.12.1.min.js"></script>	
 		<script src="../Scripts/Draggable.js"></script>
 	</body>
 </html>

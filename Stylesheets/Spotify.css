@@ -1,4 +1,10 @@
-﻿#search-form, .form-control {
+﻿.music-player {
+width: 70%;
+margin-left: 15%;
+margin-right: 15%;
+}
+
+#search-form, .form-control {
     margin-bottom: 20px;
 }
 .cover {

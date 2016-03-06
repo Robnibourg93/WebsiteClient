@@ -1,4 +1,4 @@
-var totalKc = 0, totalSugar = 0, totalFat = 0, totalProtein = 0, totalFibers = 0, totalSalt = 0;
+var totalKc = 0, totalSugar = 0, totalFat = 0, totalProtein = 0, totalFibers = 0, totalSalt = 0, maxKc = 2500;
 var firstItemAdded = false;
 StorageArray = [];
 window.onload = loadFromLocalStorage();
@@ -12,14 +12,32 @@ function addToLocalStorage(Item) {
     localStorage.setItem("foods",JSON.stringify(StorageArray))
 }
 
+$(document).ready(function () {
+    $('#manOrWomen').click(function () {
+        var notChanged = true;
+        if ($.trim($(this).attr("sex")) == "women") {
+            $(this).attr("sex", "man")
+            maxKc = 2500;
+            $('#kc').html("Calorieën:    " + totalKc.toString() + "kc " + Math.round((totalKc / maxKc) * 100) + "%");
+            $(this).html("Vrouwen klik hier!");
+            notChanged = false
+        };
+        if ($.trim($(this).attr("sex")) == "man" && notChanged) {
+            $(this).attr("sex", "women")
+            maxKc = 2000;
+            $('#kc').html("Calorieën:    " + totalKc.toString() + "kc " + Math.round((totalKc / maxKc) * 100) + "%");
+            $(this).html("Mannen klik hier!");
+        };
+    });
+});
+
+
 function loadFromLocalStorage() {
     //parse json data in localstorage
     var storedFoods = JSON.parse(localStorage.getItem("foods"));
     //only excuted code if there are storedFoods else do null.
     if (storedFoods) {
         var arrayLength = Object.keys(storedFoods).length;
-
-
         var plate = document.getElementById("plate");
 
         //for each item in the array get element by id and copy them to plate div and calculate Nutrition.
@@ -31,6 +49,7 @@ function loadFromLocalStorage() {
         }
     }
 }
+
 function reset() {
 
     //emtpy array and clear local storage.
@@ -40,7 +59,7 @@ function reset() {
 
     //reset values
     document.getElementById("plate").innerHTML = "";
-    document.getElementById("kc").innerHTML = "Calorieën:    ****kc";
+    document.getElementById("kc").innerHTML = "Calorieën:    ****kc *%";
     document.getElementById("sugar").innerHTML = "Suiker  **g   *%";
     document.getElementById("fibers").innerHTML = "Vezels  **g   *%";
     document.getElementById("fat").innerHTML = "Vet  **g   *%";
@@ -80,7 +99,7 @@ function calcNutrition(addedfood) {
     totalFibers += parseInt(fibers);
     totalSalt += parseInt(salt);
 
-    document.getElementById("kc").innerHTML = "Calorieën:    " + totalKc.toString() + "kc";
+    document.getElementById("kc").innerHTML = "Calorieën:    " + totalKc.toString() + "kc " + Math.round((totalKc / maxKc) * 100) + "%";
     document.getElementById("sugar").innerHTML = "Suiker  " + totalSugar.toString() + "g   " + Math.round((totalSugar / 50) * 100) + "%";
     document.getElementById("fibers").innerHTML = "Vezels  " + totalFibers.toString() + "g   " + Math.round((totalFibers / 70) * 100) + "%";
     document.getElementById("fat").innerHTML = "Vet  " + totalFat.toString() + "g   " + Math.round((totalFat / 100) * 100) + "%";
